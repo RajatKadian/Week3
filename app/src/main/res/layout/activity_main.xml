@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Constraint"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="358dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="76dp"
+        android:layout_marginBottom="58dp"
+        android:background="#FFEB3B"
+        android:text="@string/txtTitle"
+        android:textColor="@color/teal_700"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtinputTickets"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtinputTickets"
+        android:layout_width="372dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="43dp"
+        android:layout_marginEnd="43dp"
+        android:layout_marginBottom="63dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/prompt"
+        android:inputType="number"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/spnGames"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Spinner
+        android:id="@+id/spnGames"
+        android:layout_width="363dp"
+        android:layout_height="86dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginEnd="33dp"
+        android:layout_marginBottom="46dp"
+        android:entries="@array/groupItems"
+        android:prompt="@string/txtSpinner"
+        android:spinnerMode="dialog"
+        app:layout_constraintBottom_toTopOf="@+id/btnCost"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtinputTickets" />
+
+    <Button
+        android:id="@+id/btnCost"
+        android:layout_width="196dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginBottom="50dp"
+        android:text="@string/btnCost"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintBottom_toTopOf="@+id/txtResult"
+        app:layout_constraintEnd_toEndOf="@+id/txtResult"
+        app:layout_constraintTop_toBottomOf="@+id/spnGames" />
+
+    <TextView
+        android:id="@+id/txtResult"
+        android:layout_width="272dp"
+        android:layout_height="81dp"
+        android:layout_marginBottom="49dp"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.065"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCost" />
+</androidx.constraintlayout.widget.ConstraintLayout>

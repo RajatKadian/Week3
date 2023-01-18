@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Week3</string>
+    <string name="txtTitle">TicketMaster</string>
+    <string name="prompt">Enter number of tickets</string>
+    <string name="imgDes">An image</string>
+    <string name="btnCost">Find the cost</string>
+    <string-array name="groupItems">
+        <item>Game 1</item>
+        <item>Game 2</item>
+        <item>Game 3</item>
+    </string-array>
+    <string name="txtSpinner">Choose a game</string>
+</resources>
